@@ -1,7 +1,7 @@
 {
-  "name": "acd-converter",
+  "name": "adc-converter",
   "version": "1.0.0",
-  "description": "a tool to convert from acd to other temperatures",
+  "description": "a tool to convert from adc to other temperatures",
   "main": "converter.js",
   "scripts": {
     "test": "node ./node_modules/mocha/bin/mocha test/**/*.test.js",

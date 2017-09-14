@@ -5,10 +5,10 @@ module.exports = (function () {
   const constantC = 8.76741e-8
 
   function toCelsius (value) {
-    return value - 100
+    return toKelvin(value) - 273.15
   }
 
-  function toKalvin (adc) {
+  function toKelvin (adc) {
     let adcVolt = adc * 0.488
     let adcRes = (adcVolt * r1) / (500 - adcVolt)
     return stainHart(adcRes) - 2742
@@ -23,6 +23,6 @@ module.exports = (function () {
 
   return {
     toCelsius,
-    toKalvin
+    toKelvin
   }
 })()
